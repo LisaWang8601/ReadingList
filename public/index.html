@@ -1,0 +1,44 @@
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="main.css" />
+<body>
+	<h2>My Reading List</h2>
+    <div id="booklist"></div>
+	<div class="fixed-action-btn">
+		<a class="btn-floating btn-large waves-effect waves-light red modal-trigger"
+			href="#modal1"><i class="material-icons">Add</i></a>
+	</div>
+	<!-- Modal Structure -->
+	<div id="modal1" class="modal bottom-sheet">
+		<div class="modal-content">
+			<h4>I want to read this</h4>
+            <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                <input placeholder="book name" id="book_name" type="text" class="validate">
+                <label for="book_name">book name</label>
+				</div>
+				<div class="input-field col s6">
+					<input placeholder="author" id="book_author" type="text" class="validate">
+					<label for="book_author">Author</label>
+					</div>
+                <div class="input-field col s6">
+                <input placeholder="book genre" id="book_genre" type="text" class="validate">
+                <label for="book_genre">book genre</label>
+				</div>
+
+					<div class="input-field col s6">
+					<input placeholder="year published" id="book_published" type="date" class="validate">
+					<label for="book_published">Year Published</label>
+					</div>
+            </div>
+            </form>
+		</div>
+		<div class="modal-footer">
+			<a id="add_list" href="#!" class="modal-close waves-effect waves-green btn-flat">Add To the reading List</a>
+		</div>
+
+	</div>
+
+	<script src="main.js"></script>
+</body>
